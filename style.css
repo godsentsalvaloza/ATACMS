@@ -1,0 +1,191 @@
+/*Godsent's personal website made on 03/19/2023 version 0.01*/
+/*Last updated: 03/24/2023*/
+
+/*For making the footer stick to the bottom of the page*/
+  html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    margin-top: auto;
+    background-color: #009900;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -50vw;
+    min-height: 10vw;
+    max-height: 20vw;
+  }
+/* </>For making the footer stick to the bottom of the page*/
+
+/*Top Navigational Bar*/
+  /*Nav Name*/
+      nav#topNavigationalBar {
+        background-color: #009900;
+        margin: -8px;
+        max-height: 10vw;
+        min-height: 4vw;
+      }
+      span#topNavName {
+        color: #1a1a1a;
+        font-family: "Noto Sans", sans-serif  ;
+        font-size: 3vw;
+        padding-left: 0.5vw;
+        padding-right: 2vw;
+        max-height: 3vw;
+      }
+  /*</>Nav Name*/
+
+  /*Nav links*/
+    button.navButtonsTop {
+      font-size: 1.5vw;
+      margin-right: 1vw;
+      font-family: "Noto Sans", sans-serif;
+      border: none;
+      color: #1a1a1a;
+      background-color: #009900;
+      transition-duration: 0.4s;
+      max-width: 20vw;
+      max-height: 4vw;
+    }
+    button.navButtonsTop:hover {
+      color: #009900;
+      background-color: #333;
+    }
+  /*</>Nav links*/
+/*Top Navigational Bar*/
+
+
+/*Profile Picture*/
+img#profilePicture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vw;
+  margin-top: 6vw;
+  border-radius: 50%;
+}
+/*</>Profile Picture*/
+
+/*Name of the owner*/
+h2#websiteOwner{
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 2vw;
+
+}
+div#NameContainer{
+  margin-top: -1vw;
+}
+p#nameCredential{
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.5vw;
+  margin-top: -1vw;
+  font-weight: 500;
+}
+/*</>Name of the owner*/
+
+/*Content*/
+h2.module-options {
+  font-family: sans-serif;
+  font-size: 2vw;
+  margin-top: 1vw;
+}
+div#ContainerL{
+  margin-top: 2vw;
+}
+h3.contentHeading {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3vw;
+  margin-bottom: 2vw;
+}
+p.contentMain {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.8vw;
+}
+/*Contact*/
+  p.contactInfo {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5vw;
+  }
+  a.contactLink{
+    text-decoration: none;
+  }
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+    
+  a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    transition-duration: 0.4s;
+  }
+    
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+  }
+    
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+    }
+  
+/*</>Contact*/
+
+/*</>Content/*
+
+/*Bottom Navigational Bar*/
+  button.navButtonsBottom {
+    font-size: 1.3vw;
+    margin-right: 1.3vw;
+    font-family: "Noto Sans", sans-serif;
+    border: none;
+    color: #1a1a1a;
+    background-color: #009900;
+    transition-duration: 0.4s;
+    max-width: 23vw;
+    max-height: 8vw;
+  }
+  button.navButtonsBottom:hover {
+    color: #009900; 
+    background-color: #1a1a1a;
+  }
+  div#bottomLinkContainer{
+    margin-left: 1vw;
+  }
+  nav#bottomNavigationalBar {
+    margin-top: 1vw;
+  }
+  /*Nav Name*/
+    p#bottomNavName {
+      font-family: "Noto Sans", sans-serif;
+      color: #1a1a1a;
+      font-size: 1.2vw;
+      padding-right: 4vw;
+      padding-left: 0.5vw;
+    }
+  /*</>Nav Name*/
+/*</>Bottom Navigational Bar*/
+img.modulePhoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  
+}
+div#image-fixer {
+  margin-top: 5vw;
+}
