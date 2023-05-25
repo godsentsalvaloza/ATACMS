@@ -1,6 +1,3 @@
-/*Godsent's personal website made on 03/19/2023 version 0.01*/
-/*Last updated: 03/24/2023*/
-
 /*For making the footer stick to the bottom of the page*/
   html {
     height: 100%;
@@ -12,7 +9,7 @@
   }
   footer {
     margin-top: auto;
-    background-color: #009900;
+    background-color: #00661a;
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: -50vw;
@@ -23,14 +20,17 @@
 
 /*Top Navigational Bar*/
   /*Nav Name*/
+      a#startLinkParameters {
+        text-decoration: none;
+      }
       nav#topNavigationalBar {
-        background-color: #009900;
+        background-color: #00661a;
         margin: -8px;
         max-height: 10vw;
         min-height: 4vw;
       }
       span#topNavName {
-        color: #1a1a1a;
+        color: #e6e6e6;
         font-family: "Noto Sans", sans-serif  ;
         font-size: 3vw;
         padding-left: 0.5vw;
@@ -45,33 +45,32 @@
       margin-right: 1vw;
       font-family: "Noto Sans", sans-serif;
       border: none;
-      color: #1a1a1a;
-      background-color: #009900;
+      color: #e6e6e6;
+      background-color: #00661a;
       transition-duration: 0.4s;
       max-width: 20vw;
       max-height: 4vw;
     }
     button.navButtonsTop:hover {
-      color: #009900;
-      background-color: #333;
+      color: #00661a;
+      background-color: #e6e6e6;
     }
   /*</>Nav links*/
 /*Top Navigational Bar*/
 
-
-/*Profile Picture*/
-img#profilePicture {
+/*Logo Picture*/
+img#websiteLogo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 20vw;
-  margin-top: 6vw;
+  margin-top: 10vw;
   border-radius: 50%;
 }
-/*</>Profile Picture*/
+/*</>Logo Picture*/
 
-/*Name of the owner*/
-h2#websiteOwner{
+/*Website name header*/
+h2#websiteNameHeader{
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-size: 2vw;
@@ -80,72 +79,82 @@ h2#websiteOwner{
 div#NameContainer{
   margin-top: -1vw;
 }
-p#nameCredential{
+p#bottomNameHeader{
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-size: 1.5vw;
-  margin-top: -1vw;
+  margin-top: -1.3vw;
   font-weight: 500;
 }
-/*</>Name of the owner*/
+/*</>website name header*/
 
 /*Content*/
-h2.module-options {
-  font-family: sans-serif;
-  font-size: 2vw;
-  margin-top: 1vw;
-}
-div#ContainerL{
-  margin-top: 2vw;
-}
-h3.contentHeading {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 3vw;
-  margin-bottom: 2vw;
-}
-p.contentMain {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1.8vw;
-}
-/*Contact*/
-  p.contactInfo {
-    font-family: "Noto Sans", sans-serif;
-    font-size: 1.5vw;
-  }
-  a.contactLink{
-    text-decoration: none;
-  }
-  a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-    transition-duration: 0.4s;
-  }
-    
-  a:visited {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-    transition-duration: 0.4s;
-  }
-    
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-    transition-duration: 0.4s;
-  }
-    
-  a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-    transition-duration: 0.4s;
-    }
-  
-/*</>Contact*/
+  /*getStartedButton*/
+    button#getStarted {
+      font-size: 1.3vw;
+      font-family: "Noto Sans", sans-serif;
+      border: none;
+      width: 30vw;
+      height: 10vw;
+      color: #e6e6e6;
+      background-color: #00661a;
+      transition-duration: 0.4s;
+      font-size: 3vw;
 
-/*</>Content/*
+    }
+    button#getStarted:hover {
+      color: #00661a; 
+      background-color: #e6e6e6;
+    }
+    div#getStartedContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 9vw;
+
+    }
+  /*</>getStartedButton*/
+
+  /*Paragraphs*/
+    article#paragraphHolder {
+      margin-top: 15vw;
+      margin-right: 0.5vw;
+    }
+    h2.paragraphHeader {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 3vw;
+    }
+    p.paragraphContent {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 2vw;
+      text-align: justify;
+    }
+    div.paragraphDivider {
+      margin-bottom: 7vw;
+    }
+    a#linkAbout {
+      text-decoration: none;
+    }
+     /* unvisited link */
+    a#linkAbout:link {
+      color: #00661a;
+    }
+
+    /* visited link */
+    a#linkAbout:visited {
+      color: green;
+    }
+
+    /* mouse over link */
+    a#linkAbout:hover {
+      color: red;
+    }
+
+    /* selected link */
+    a#linkAbout:active {
+      color: #00661a;
+    } 
+  /*</>Paragraphs*/
+/*</>Content*/
 
 /*Bottom Navigational Bar*/
   button.navButtonsBottom {
@@ -153,15 +162,15 @@ p.contentMain {
     margin-right: 1.3vw;
     font-family: "Noto Sans", sans-serif;
     border: none;
-    color: #1a1a1a;
-    background-color: #009900;
+    color: #e6e6e6;
+    background-color: #00661a;
     transition-duration: 0.4s;
     max-width: 23vw;
     max-height: 8vw;
   }
   button.navButtonsBottom:hover {
-    color: #009900; 
-    background-color: #1a1a1a;
+    color: #00661a; 
+    background-color: #e6e6e6;
   }
   div#bottomLinkContainer{
     margin-left: 1vw;
@@ -172,20 +181,10 @@ p.contentMain {
   /*Nav Name*/
     p#bottomNavName {
       font-family: "Noto Sans", sans-serif;
-      color: #1a1a1a;
+      color: #f2f2f2;
       font-size: 1.2vw;
       padding-right: 4vw;
       padding-left: 0.5vw;
     }
   /*</>Nav Name*/
 /*</>Bottom Navigational Bar*/
-img.modulePhoto {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  
-}
-div#image-fixer {
-  margin-top: 5vw;
-}
