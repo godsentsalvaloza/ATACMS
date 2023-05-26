@@ -188,3 +188,38 @@ p#bottomNameHeader{
     }
   /*</>Nav Name*/
 /*</>Bottom Navigational Bar*/
+
+
+
+
+
+/*ABOUT PAGE*/
+    div#mainAboutContainer {
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+    h1#aboutHeader {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 3.5vw;
+      margin-top: 10vw;
+      text-align: center;
+    }
+    article#aboutContentContainer {
+      margin-top: 10vw;
+    }
+    hr#hrAbout{
+      width: 90%;
+
+    }
+    div#aboutContributionName {
+      margin-top: 10vw;
+    }
+    h2#contributionHead {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 2.7vw;
+    }
+    li.contributionPlaceholder {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 2vw;
+    }
+/*</>ABOUT PAGE*/
