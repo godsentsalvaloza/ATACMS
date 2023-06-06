@@ -35,61 +35,156 @@
       </nav>
     <!--/Nav Bar-->
 
-    <!--START-->
-      <div id="mainAboutContainer" style="display:block ;">
-
-        <!--HEADER START-->
-          <h1 id="aboutHeader">Simple addition quiz</h1>
-        <!--</>HEADER START-->
-
-        <!--BUTTON START-->
-          <article id="aboutContentContainer">
-            <div id="getStartedContainer">
-              <button id="getStarted" >Start</button>
+    <!--MAIN GAME CONTAINER-->
+      <div id="mainContainerGame">
+        <!--START-->
+          <div id="startContainer" style="display: block;">
+            <h1 class="gameHeader">Simple addition quiz</h1>
+            <div class="gameButtonFixer">
+              <button id="getStarted">Start</button>
             </div>
-          </article>
-        <!--BUTTON START-->
+          </div>
+        <!--/START-->
+      
+
+        <!--DEFEATED-->
+          <div id="defeatContainer" style="display: none;">
+            <h1 class="gameHeader">GAME OVER</h1>
+            <div class="gameButtonFixer">
+              <a href="./addition-quiz.html" id="startLinkParameters">
+                <button class="gameOptionsButton">Start again</button>
+              </a>
+            </div>
+            <div class="gameButtonFixer">
+              <a href="../index.html" id="startLinkParameters">
+                <button class="gameOptionsButton">Return to home</button>
+              </a>
+            </div>
+          </div>
+        <!--/DEFEATED-->
+
+        <!--VICTORY-->
+        <div id="victoryContainer" style="display: none;">
+          <h1 class="gameHeader">YOU WIN!</h1>
+          <div class="gameButtonFixer">
+            <a href="./addition-quiz.html" id="startLinkParameters">
+              <button class="gameOptionsButton">Start again</button>
+            </a>
+          </div>
+          <div class="gameButtonFixer">
+            <a href="../index.html" id="startLinkParameters">
+              <button class="gameOptionsButton">Return to home</button>
+            </a>
+          </div>
+        </div>
+      <!--/VICTORY-->
+
+        <!--FIRST QUESTION-->
+          <div id="firstQuestion" style="display:none;">
+            <h1 class="questionHeader">3+3</h1>
+
+            <div class="gameButtonFixer">
+              <button class="gameOptionsButton" id="firstQuestionFirstOption">3!</button>
+            </div>
+            <div class="gameButtonFixer">
+              <button class="gameOptionsButton" id="firstQuestionSecondOption">33</button>
+            </div>
+            <div class="gameButtonFixer">
+              <button class="gameOptionsButton" id="firstQuestionThirdOption">3.14</button>
+            </div>
+            <div class="gameButtonFixer">
+              <button class="gameOptionsButton" id="firstQuestionFourthOption">-6</button>
+            </div>
+          </div>
+        <!--</>FIRST QUESTION-->
+
+        <!--SECOND QUESTION-->
+          <div id="secondQuestion" style="display:none;">
+            <h1 class="questionHeader">7+2</h1>
+
+            <div class="gameButtonFixer">
+              <button class="gameOptionsButton" id="secondQuestionFirstOption">76</button>
+            </div>
+            <div class="gameButtonFixer">
+              <button class="gameOptionsButton" id="secondQuestionSecondOption">192,168</button>
+            </div>
+            <div class="gameButtonFixer">
+              <button class="gameOptionsButton" id="secondQuestionThirdOption">3.14</button>
+            </div>
+            <div class="gameButtonFixer">
+              <button class="gameOptionsButton" id="secondQuestionFourthOption">3<sup>2</sup></button>
+            </div>
+          </div>
+        <!--</>SECOND QUESTION-->
+
+        <!--THIRD QUESTION-->
+        <div id="thirdQuestion" style="display:none;">
+          <h1 class="questionHeader">57+35</h1>
+
+          <div class="gameButtonFixer">
+            <button class="gameOptionsButton" id="thirdQuestionFirstOption">76</button>
+          </div>
+          <div class="gameButtonFixer">
+            <button class="gameOptionsButton" id="thirdQuestionSecondOption">93</button>
+          </div>
+          <div class="gameButtonFixer">
+            <button class="gameOptionsButton" id="thirdQuestionThirdOption">92</button>
+          </div>
+          <div class="gameButtonFixer">
+            <button class="gameOptionsButton" id="thirdQuestionFourthOption">x<sup>3</sup></button>
+          </div>
+        </div>
+      <!--</>THIRD QUESTION-->
+
+      <!--FOURTH QUESTION-->
+        <div id="fourthQuestion" style="display:none;">
+          <h1 class="questionHeader">32 + -3</h1>
+
+          <div class="gameButtonFixer">
+            <button class="gameOptionsButton" id="fourthQuestionFirstOption">29</button>
+          </div>
+          <div class="gameButtonFixer">
+            <button class="gameOptionsButton" id="fourthQuestionSecondOption">35</button>
+          </div>
+          <div class="gameButtonFixer">
+            <button class="gameOptionsButton" id="fourthQuestionThirdOption">2</button>
+          </div>
+          <div class="gameButtonFixer">
+            <button class="gameOptionsButton" id="fourthQuestionFourthOption">928</button>
+          </div>
+        </div>
+      <!--</>FOURTH QUESTION-->
+
+      <!--FIFTH QUESTION-->
+      <div id="fifthQuestion" style="display:none;">
+        <h1 class="questionHeader">2021+2022</h1>
+
+        <div class="gameButtonFixer">
+          <button class="gameOptionsButton" id="fifthQuestionFirstOption">8,912</button>
+        </div>
+        <div class="gameButtonFixer">
+          <button class="gameOptionsButton" id="fifthQuestionSecondOption">4,043</button>
+        </div>
+        <div class="gameButtonFixer">
+          <button class="gameOptionsButton" id="fifthQuestionThirdOption">7,190</button>
+        </div>
+        <div class="gameButtonFixer">
+          <button class="gameOptionsButton" id="fifthQuestionFourthOption">1,500</button>
+        </div>
+      </div>
+    <!--</>FIFTH QUESTION-->
+      
+
+
+
 
       </div>
-    <!--/START-->
-
-    <!--FIRST QUESTION-->
-      <div id="firstQuestionContainer" style="display: none;">
-
-        <div class="QuestionHeader">
-          <h1 class="additionQuestion">
-            3+3
-          </h1>
-        </div>
-       
-        <div class="QuestionHeader">
-          <button id="getStarted" >3!</button>
-        </div>
-
-        <div class="QuestionHeader">
-          <button id="getStarted" >33</button>
-        </div>
-
-        <div class="QuestionHeader">
-          <button id="getStarted" >0</button>
-        </div>
-
-        <div class="QuestionHeader">
-          <button id="getStarted" >100</button>
-        </div>
-
-      </div>
-    <!--</>FIRST QUESTION-->       
-
-
-
+   <!--</>MAIN GAME CONTAINER-->
 
 
 
   
     <!--PLACEHOLDER-->
-    <article id="paragraphHolder">
-    </article>
     <article id="paragraphHolder">
     </article>
     <!--/PLACEHOLDER-->
